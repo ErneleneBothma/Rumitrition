@@ -14,7 +14,7 @@
 (defn set-connection! [uri]
   (reset! *conn (d/connect uri)))
 
-(def schema
+(def schema-test
   [{:db/id (d/tempid :db.part/db)
     :db/ident :group/number
     :db/valueType :db.type/long
